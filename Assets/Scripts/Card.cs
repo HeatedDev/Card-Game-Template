@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -20,6 +18,10 @@ public class Card : MonoBehaviour
     public TextMeshProUGUI costText;
     public TextMeshProUGUI damageText;
     public Image spriteImage;
+
+    private bool isDragging = false;
+    private Vector3 offset;
+    private Camera mainCamera;
         
 
     // Start is called before the first frame update
@@ -45,4 +47,6 @@ public class Card : MonoBehaviour
     {
         
     }
+
+
 }
